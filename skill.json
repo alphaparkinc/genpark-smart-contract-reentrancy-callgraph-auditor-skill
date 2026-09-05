@@ -1,0 +1,36 @@
+{
+  "name": "genpark-smart-contract-reentrancy-callgraph-auditor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Solidity callgraph and control-flow auditor detecting reentrancy vulnerabilities and Checks-Effects-Interactions violations.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "crypto",
+  "tags": [
+    "reentrancy-guard",
+    "solidity-audit",
+    "smart-contracts",
+    "web3-security",
+    "slither"
+  ],
+  "inputs": {
+    "contract_name": {
+      "type": "string"
+    },
+    "function_name": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "audit_id": {
+      "type": "string"
+    },
+    "reentrancy_vulnerable": {
+      "type": "boolean"
+    },
+    "nonreentrant_modifier_present": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
